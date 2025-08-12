@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,7 +32,32 @@
     button:hover { background: #e6c200; }
     ul { list-style-type: none; padding-left: 0; }
     li { margin-bottom: 8px; }
-    /* Pricing table styles here... (same as before) */
+    .pricing-table {
+      background: #003366;
+      padding: 15px;
+      border-radius: 8px;
+      max-width: 400px;
+      margin: 0 auto;
+      color: #ffd700;
+    }
+    .pricing-table h3 {
+      margin-top: 0;
+      text-align: center;
+      color: #ffd700;
+    }
+    .pricing-table table {
+      width: 100%;
+      border-collapse: collapse;
+      color: white;
+    }
+    .pricing-table th, .pricing-table td {
+      border: 1px solid #ffd700;
+      padding: 8px;
+      text-align: center;
+    }
+    .pricing-table th {
+      background-color: #004080;
+    }
   </style>
 </head>
 <body>
@@ -40,4 +67,90 @@
   <p class="tagline">Print. Smile. Repeat.</p>
 </header>
 
-<!-- rest of your code -->
+<nav>
+  <a href="#services">Services</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About Us</a>
+</nav>
+
+<main>
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Printing:</strong> Crisp, high-quality prints for all your needs.</li>
+      <li><strong>Photocopy:</strong> Fast and affordable photocopying services.</li>
+      <li><strong>Laminating:</strong> Protect your important documents with glossy lamination.</li>
+      <li><strong>Comb Binding:</strong> Professional binding for reports and projects.</li>
+      <li><strong>Typing Services:</strong> Accurate and quick typing for school and business documents.</li>
+      <li><strong>Scan & Print:</strong> Convenient scanning and printing services.</li>
+    </ul>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <div class="pricing-table">
+      <h3>BW Print & Photocopy</h3>
+      <table>
+        <tr><th>Type</th><th>Price (₱)</th></tr>
+        <tr><td>Short</td><td>5.00</td></tr>
+        <tr><td>A4</td><td>5.00</td></tr>
+        <tr><td>Long</td><td>8.00</td></tr>
+      </table>
+    </div>
+
+    <br/>
+
+    <div class="pricing-table">
+      <h3>Colored Print & Photocopy</h3>
+      <table>
+        <tr><th>Type</th><th>Price (₱)</th></tr>
+        <tr><td>Short</td><td>8.00</td></tr>
+        <tr><td>A4</td><td>8.00</td></tr>
+        <tr><td>Long</td><td>10.00</td></tr>
+        <tr><td>W/ Picture</td><td>15.00 - 30.00</td></tr>
+      </table>
+    </div>
+
+    <br/>
+
+    <div class="pricing-table">
+      <h3>Scan & Print</h3>
+      <p style="text-align:center;">25.00 - 30.00</p>
+    </div>
+
+    <br/>
+
+    <div class="pricing-table">
+      <h3>Laminate</h3>
+      <p style="text-align:center;">(Depends on the size)</p>
+      <table>
+        <tr><th>Type</th><th>Starting Price (₱)</th></tr>
+        <tr><td>Soft</td><td>30.00</td></tr>
+        <tr><td>Hard</td><td>40.00</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Phone: +63 985 361 3710</p>
+    <p>Email: hachijiprinting@example.com</p>
+    <p>
+      Facebook: <a href="https://www.facebook.com/8jiprint" target="_blank" style="color:#ffd700;">8jiprint</a><br/>
+      Instagram: <a href="https://www.instagram.com/hachijiprinting/" target="_blank" style="color:#ffd700;">hachijiprinting</a>
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Hachi Ji Printing Services is a trusted local print shop dedicated to delivering quality and fast service. We cater to students, businesses, and the community with affordable printing and related services.</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Hachi Ji Printing Services. All rights reserved.
+</footer>
+
+</body>
+</html>
